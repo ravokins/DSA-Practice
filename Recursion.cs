@@ -14,17 +14,30 @@
     {
       Recursion r=new Recursion();
         //r.CalculateItrative(10);
-        r.CalculateRecursive(10);
+        // r.CalculateTRecursive(10);
+        r.CalculateHRecursive(10);
         Console.ReadKey();
     }
-
-    public void CalculateRecursive(int N)
+    // Tail Recursion:
+    public void CalculateTRecursive(int N)
     {
         if (N > 0)
         {
             int K = N * N;
             Console.WriteLine(K);
-            CalculateRecursive(N-1); 
+            CalculateTRecursive(N-1); 
+
+        }
+    }
+    // Head Recursion:
+    public void CalculateHRecursive(int N)
+    {
+        if (N > 0)
+        {
+            CalculateHRecursive(N - 1);
+            int K = N * N;
+            Console.WriteLine(K);
+            
 
         }
     }
