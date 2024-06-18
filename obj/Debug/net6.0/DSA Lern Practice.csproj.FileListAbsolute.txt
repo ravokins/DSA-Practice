@@ -1,0 +1,15 @@
+D:\DSA\DSA Lern Practice\bin\Debug\net6.0\DSA Lern Practice.exe
+D:\DSA\DSA Lern Practice\bin\Debug\net6.0\DSA Lern Practice.deps.json
+D:\DSA\DSA Lern Practice\bin\Debug\net6.0\DSA Lern Practice.runtimeconfig.json
+D:\DSA\DSA Lern Practice\bin\Debug\net6.0\DSA Lern Practice.dll
+D:\DSA\DSA Lern Practice\bin\Debug\net6.0\DSA Lern Practice.pdb
+D:\DSA\DSA Lern Practice\obj\Debug\net6.0\DSA Lern Practice.csproj.AssemblyReference.cache
+D:\DSA\DSA Lern Practice\obj\Debug\net6.0\DSA Lern Practice.GeneratedMSBuildEditorConfig.editorconfig
+D:\DSA\DSA Lern Practice\obj\Debug\net6.0\DSA Lern Practice.AssemblyInfoInputs.cache
+D:\DSA\DSA Lern Practice\obj\Debug\net6.0\DSA Lern Practice.AssemblyInfo.cs
+D:\DSA\DSA Lern Practice\obj\Debug\net6.0\DSA Lern Practice.csproj.CoreCompileInputs.cache
+D:\DSA\DSA Lern Practice\obj\Debug\net6.0\DSA Lern Practice.dll
+D:\DSA\DSA Lern Practice\obj\Debug\net6.0\refint\DSA Lern Practice.dll
+D:\DSA\DSA Lern Practice\obj\Debug\net6.0\DSA Lern Practice.pdb
+D:\DSA\DSA Lern Practice\obj\Debug\net6.0\DSA Lern Practice.genruntimeconfig.cache
+D:\DSA\DSA Lern Practice\obj\Debug\net6.0\ref\DSA Lern Practice.dll
