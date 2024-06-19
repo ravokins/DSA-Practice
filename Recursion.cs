@@ -15,7 +15,8 @@
       Recursion r=new Recursion();
         //r.CalculateItrative(10);
         // r.CalculateTRecursive(10);
-        r.CalculateHRecursive(10);
+        // r.CalculateHRecursive(10);
+        r.CalculateTreeRecursive(10);
         Console.ReadKey();
     }
     // Tail Recursion:
@@ -38,6 +39,18 @@
             int K = N * N;
             Console.WriteLine(K);
             
+
+        }
+    }
+    //Tree Recursion:
+    public void CalculateTreeRecursive(int N)
+    {
+        if (N > 0)
+        {
+            CalculateTreeRecursive(N - 1);
+            int K = N * N;
+            Console.WriteLine(K);
+            CalculateTreeRecursive(N - 1);
 
         }
     }
