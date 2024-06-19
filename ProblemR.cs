@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DSA_Lern_Practice
-{  
+{   
     internal class ProblemR
     {
         // Calculating sum of n natural number:
@@ -32,6 +32,28 @@ namespace DSA_Lern_Practice
             if(n == 0)
                 return 0;
             return SumnRecursion(n - 1)+n;
+        }
+
+
+        //factorial Problem:
+
+        // IItrative Methodd:
+
+        public int FactItrative(int n)
+        {
+            int total = 0;
+            for(int i = 1; i <= n; i++)
+            {
+                total = total * i;
+            }
+            return total;
+        }
+
+        public int FactRecursive(int n)
+        {
+            if (n == 0) 
+                return 0;
+            return FactRecursive(n - 1)*n;
         }
     }
 }

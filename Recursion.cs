@@ -14,19 +14,25 @@ class Recursion
     }
     static void Main(string[] args)
     {
-      //Recursion r=new Recursion();
+        //Recursion r=new Recursion();
         //r.CalculateItrative(10);
         // r.CalculateTRecursive(10);
         // r.CalculateHRecursive(10);
-       // r.CalculateTreeRecursive(10);
-       // Console.ReadKey();
+        // r.CalculateTreeRecursive(10);
+        // Console.ReadKey();
 
 
         // Problem:
+        // Sum of n Natural Naumber:
+
+        // Console.WriteLine(r.Sumn(12));
+        //Console.WriteLine( r.SumnIteraton(12));
+        //Console.WriteLine( r.SumnRecursion(12));
+        // Console.ReadKey();
         ProblemR r = new ProblemR();
-        Console.WriteLine(r.Sumn(12));
-       Console.WriteLine( r.SumnIteraton(12));
-       Console.WriteLine( r.SumnRecursion(12));
+        //Factorial:
+        Console.WriteLine(r.FactRecursive(100));
+        Console.WriteLine(r.FactItrative(100));
         Console.ReadKey();
     }
     // Tail Recursion:
