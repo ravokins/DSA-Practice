@@ -41,10 +41,17 @@ class main_program
         //Console.WriteLine("Result:"+Result);
         //Console.ReadKey();
 
-        // Binary Serch using itratiion:
+        //// Binary Serch using itratiion:
+        //SearchingAlgo s = new SearchingAlgo();
+        //int[] A = { 12, 23, 45, 677, 90 };
+        //int Result = s.BinarySearch(A, 6, 90);
+        //Console.WriteLine("Result:" + Result);
+        //Console.ReadKey();
+
+        // Binary Serch using Recursion:
         SearchingAlgo s = new SearchingAlgo();
         int[] A = { 12, 23, 45, 677, 90 };
-        int Result = s.BinarySearch(A, 6, 90);
+        int Result = s.BinaryRSearch(A,677,0,4);
         Console.WriteLine("Result:" + Result);
         Console.ReadKey();
 
