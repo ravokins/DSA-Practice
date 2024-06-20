@@ -35,10 +35,17 @@ class main_program
         // Searching Algorithms:
 
         // Linear Search:
-        SearchingAlgo s=new SearchingAlgo();
+        //SearchingAlgo s=new SearchingAlgo();
+        //int[] A = { 12, 23, 45, 677, 90 };
+        //int Result = s.LinearSearch(A,5,0);
+        //Console.WriteLine("Result:"+Result);
+        //Console.ReadKey();
+
+        // Binary Serch using itratiion:
+        SearchingAlgo s = new SearchingAlgo();
         int[] A = { 12, 23, 45, 677, 90 };
-        int Result = s.LinearSearch(A,5,0);
-        Console.WriteLine("Result:"+Result);
+        int Result = s.BinarySearch(A, 6, 90);
+        Console.WriteLine("Result:" + Result);
         Console.ReadKey();
 
     }

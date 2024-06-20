@@ -23,5 +23,29 @@ namespace DSA_Lern_Practice
             }
             return -1;
         }
+
+        public int BinarySearch(int[]A,int n,int value)
+        {
+            int l = 0;
+            int r = n-1;
+            while(l <= r)
+            {
+                int M = (l+r)/2;
+                if (A[M] == value)
+                {
+                    return M;
+                }
+                else if (A[M] > value)
+                {
+                    r = M - 1;
+                   
+                }
+                else if (A[M] < value)
+                    l = M + 1;
+
+            }
+
+            return -1;
+        }
     }
 }
