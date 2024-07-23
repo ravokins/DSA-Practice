@@ -1,2 +1,2 @@
-# DSA-Lern-Practice
+# DSA-Practice
  
