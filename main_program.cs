@@ -49,10 +49,21 @@ class main_program
         //Console.ReadKey();
 
         // Binary Serch using Recursion:
-        SearchingAlgo s = new SearchingAlgo();
+        //SearchingAlgo s = new SearchingAlgo();
+        //int[] A = { 12, 23, 45, 677, 90 };
+        //int Result = s.BinaryRSearch(A,677,0,4);
+        //Console.WriteLine("Result:" + Result);
+
+
+
+        // Sorting Algorithms:
         int[] A = { 12, 23, 45, 677, 90 };
-        int Result = s.BinaryRSearch(A,677,0,4);
-        Console.WriteLine("Result:" + Result);
+        BubbleSort bubbleshort=new BubbleSort();
+        Console.WriteLine("Before Sorting:");
+        bubbleshort.PrintArray(A);
+        Console.WriteLine("\n After Sorting:");
+        bubbleshort.BubbleSorting(A);
+        bubbleshort.PrintArray(A);
         Console.ReadKey();
 
     }
