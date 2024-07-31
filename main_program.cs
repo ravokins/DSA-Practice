@@ -55,17 +55,25 @@ class main_program
         //Console.WriteLine("Result:" + Result);
 
 
-
+     
         // Sorting Algorithms:
         int[] A = { 12, 23, 45, 677, 90 };
-        BubbleSort bubbleshort=new BubbleSort();
+        //BubbleSort bubbleshort=new BubbleSort();
+        SlectionSort sort = new SlectionSort();
         Console.WriteLine("Before Sorting:");
-        bubbleshort.PrintArray(A);
+        PrintArray(A);
         Console.WriteLine("\n After Sorting:");
-        bubbleshort.BubbleSorting(A);
-        bubbleshort.PrintArray(A);
+        sort.SlectionSorting(A);
+       // bubbleshort.BubbleSorting(A);
+        PrintArray(A);
         Console.ReadKey();
 
     }
-   
+    public static void PrintArray(int[] Arr)
+    {
+        foreach (int i in Arr)
+        {
+            Console.Write(" " + i + " ");
+        }
+    }
 }
