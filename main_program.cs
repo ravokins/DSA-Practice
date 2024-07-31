@@ -59,11 +59,12 @@ class main_program
         // Sorting Algorithms:
         int[] A = { 12, 23, 45, 677, 90 };
         //BubbleSort bubbleshort=new BubbleSort();
-        SlectionSort sort = new SlectionSort();
+       // SlectionSort sort = new SlectionSort();
+       InsertionSort insertionSort = new InsertionSort();
         Console.WriteLine("Before Sorting:");
         PrintArray(A);
         Console.WriteLine("\n After Sorting:");
-        sort.SlectionSorting(A);
+        insertionSort.InsertionSorting(A);
        // bubbleshort.BubbleSorting(A);
         PrintArray(A);
         Console.ReadKey();
