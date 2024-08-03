@@ -64,8 +64,10 @@ class main_program
         Console.WriteLine("Before Sorting:");
         PrintArray(A);
         Console.WriteLine("\n After Sorting:");
-        QuickSort quickSort = new QuickSort();
-        quickSort.QuickSorting(A, 0,A.Length-1);
+        MergedSort mergedSort = new MergedSort();
+        mergedSort.Divide(A,0,A.Length-1);
+       // QuickSort quickSort = new QuickSort();
+       // quickSort.QuickSorting(A, 0,A.Length-1);
        // insertionSort.InsertionSorting(A);
        // bubbleshort.BubbleSorting(A);
         PrintArray(A);
