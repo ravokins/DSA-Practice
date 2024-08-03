@@ -60,11 +60,13 @@ class main_program
         int[] A = { 12, 23, 45, 677, 90 };
         //BubbleSort bubbleshort=new BubbleSort();
        // SlectionSort sort = new SlectionSort();
-       InsertionSort insertionSort = new InsertionSort();
+      // InsertionSort insertionSort = new InsertionSort();
         Console.WriteLine("Before Sorting:");
         PrintArray(A);
         Console.WriteLine("\n After Sorting:");
-        insertionSort.InsertionSorting(A);
+        QuickSort quickSort = new QuickSort();
+        quickSort.QuickSorting(A, 0,A.Length-1);
+       // insertionSort.InsertionSorting(A);
        // bubbleshort.BubbleSorting(A);
         PrintArray(A);
         Console.ReadKey();
