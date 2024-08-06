@@ -3,7 +3,7 @@
 class main_program
 {
    
-    static void Main(string[] args)
+    /*static void Main(string[] args)
     {
         //Recursion r=new Recursion();
         //r.CalculateItrative(10);
@@ -80,5 +80,5 @@ class main_program
         {
             Console.Write(" " + i + " ");
         }
-    }
+    }*/
 }
