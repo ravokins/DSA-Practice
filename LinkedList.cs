@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Drawing;
+using System.Collections.Generic;
 
 namespace DSA_Lern_Practice
 {
-    public class LinkedList
+    public class LinkedList1
     {
         public Node? head;
        
@@ -100,7 +100,7 @@ namespace DSA_Lern_Practice
        
         private static void Main(string[] args)
         {
-            LinkedList list1 = new LinkedList();
+            LinkedList1 list1 = new LinkedList1();
             list1.addFirst("a");
             list1.addFirst("is");
             list1.addFirst("this");
@@ -110,6 +110,47 @@ namespace DSA_Lern_Practice
             list1.display();
             list1.removeFirst();
             list1.display();
+
+            Console.WriteLine("---------------------------------------------------------------");
+
+          LinkedList<int> list = new LinkedList<int>();
+            list.AddFirst(1);
+            list.AddFirst(2);
+            list.AddFirst(3);
+            list.AddFirst(4);
+            list.AddFirst(5);
+
+            Console.WriteLine("(addfirst)Linkedlist Number");
+            foreach(int i in list)
+            {
+                Console.Write(i+" "+ "-> ");
+            }
+            Console.Write("null");
+            list.AddLast(6);
+            list.AddLast(7);
+
+            Console.WriteLine("\n(add Last)Linkedlist Number");
+            foreach (int i in list)
+            {
+                Console.Write(i + " " + "-> ");
+            }
+            Console.Write("null");
+            list.RemoveLast();
+            Console.WriteLine("\n(Remove Last)Linkedlist Number");
+            foreach (int i in list)
+            {
+                Console.Write(i + " " + "-> " );
+            }
+            Console.Write("null");
+
+            list.RemoveFirst();
+            Console.WriteLine("\n(Remove Last)Linkedlist Number");
+            foreach (int i in list)
+            {
+                Console.Write(i + " " + "-> ");
+            }
+            Console.Write("null");
+
 
         }
     }
