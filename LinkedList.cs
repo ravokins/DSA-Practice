@@ -5,7 +5,7 @@ namespace DSA_Lern_Practice
 {
     public class LinkedList1
     {
-        public Node? head;
+        public static Node? head;
        
       
         public class Node
@@ -97,6 +97,28 @@ namespace DSA_Lern_Practice
             Console.Write("null");
         }
 
+        public void reverseList()
+        {
+            if(head == null || head.next == null/*because after head.next if there is no element then there is no pint to switch*/ )
+            {
+                return;
+            }
+
+            Node? preNode= head;
+            Node? currNode = head.next;
+            while(currNode != null)
+            {
+                Node? nextNode= currNode.next;
+                currNode.next = preNode;
+
+                preNode = currNode;
+                currNode = nextNode;
+            }
+
+            head.next = null;
+            head = preNode;
+
+        }
        
         private static void Main(string[] args)
         {
@@ -106,50 +128,54 @@ namespace DSA_Lern_Practice
             list1.addFirst("this");
             list1.addLast("List");
             list1.display();
-            list1.removeLast();
+            //list1.removeLast();
+           // list1.display();
+            //list1.removeFirst();
+            //list1.display();
+            list1.reverseList();
             list1.display();
-            list1.removeFirst();
-            list1.display();
 
-            Console.WriteLine("---------------------------------------------------------------");
+            /* Console.WriteLine("---------------------------------------------------------------");
 
-          LinkedList<int> list = new LinkedList<int>();
-            list.AddFirst(1);
-            list.AddFirst(2);
-            list.AddFirst(3);
-            list.AddFirst(4);
-            list.AddFirst(5);
+           LinkedList<int> list = new LinkedList<int>();
+             list.AddFirst(1);
+             list.AddFirst(2);
+             list.AddFirst(3);
+             list.AddFirst(4);
+             list.AddFirst(5);
 
-            Console.WriteLine("(addfirst)Linkedlist Number");
-            foreach(int i in list)
-            {
-                Console.Write(i+" "+ "-> ");
-            }
-            Console.Write("null");
-            list.AddLast(6);
-            list.AddLast(7);
+             Console.WriteLine("(addfirst)Linkedlist Number");
+             foreach(int i in list)
+             {
+                 Console.Write(i+" "+ "-> ");
+             }
+             Console.Write("null");
+             list.AddLast(6);
+             list.AddLast(7);
 
-            Console.WriteLine("\n(add Last)Linkedlist Number");
-            foreach (int i in list)
-            {
-                Console.Write(i + " " + "-> ");
-            }
-            Console.Write("null");
-            list.RemoveLast();
-            Console.WriteLine("\n(Remove Last)Linkedlist Number");
-            foreach (int i in list)
-            {
-                Console.Write(i + " " + "-> " );
-            }
-            Console.Write("null");
+             Console.WriteLine("\n(add Last)Linkedlist Number");
+             foreach (int i in list)
+             {
+                 Console.Write(i + " " + "-> ");
+             }
+             Console.Write("null");
+             list.RemoveLast();
+             Console.WriteLine("\n(Remove Last)Linkedlist Number");
+             foreach (int i in list)
+             {
+                 Console.Write(i + " " + "-> " );
+             }
+             Console.Write("null");
 
-            list.RemoveFirst();
-            Console.WriteLine("\n(Remove Last)Linkedlist Number");
-            foreach (int i in list)
-            {
-                Console.Write(i + " " + "-> ");
-            }
-            Console.Write("null");
+             list.RemoveFirst();
+             Console.WriteLine("\n(Remove Last)Linkedlist Number");
+             foreach (int i in list)
+             {
+                 Console.Write(i + " " + "-> ");
+             }
+             Console.Write("null");
+
+            */
 
 
         }
