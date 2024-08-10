@@ -3,24 +3,23 @@ using System.Collections.Generic;
 
 namespace DSA_Lern_Practice
 {
+    public class Node
+    {
+        public string value { get; set; }
+        public Node? next { get; set; }
+
+
+        public Node(string value)
+        {
+            this.value = value;
+            next = null;
+
+
+        }
+    }
     public class LinkedList1
     {
-        public static Node? head;
-       
-      
-        public class Node
-        {
-            public string value { get; set; }
-            public Node? next { get; set; }
-
-
-            public Node(string value)
-            { this.value = value; 
-              next = null;
-              
-
-            }
-        }
+        public  Node? head;
 
         public void addFirst(string value)
         {
@@ -119,20 +118,34 @@ namespace DSA_Lern_Practice
             head = preNode;
 
         }
+
+        public Node recursiveReverse(Node? head)
+        {
+            if(head == null || head.next == null)
+            {
+                return head;
+            }
+            Node newHead= recursiveReverse(head.next);
+            head.next.next = head;
+            head.next = null;
+            return newHead;
+        }
        
         private static void Main(string[] args)
         {
             LinkedList1 list1 = new LinkedList1();
             list1.addFirst("a");
-            list1.addFirst("is");
-            list1.addFirst("this");
-            list1.addLast("List");
-            list1.display();
+            //list1.addFirst("is");
+            //list1.addFirst("this");
+            //list1.addLast("List");
+            //list1.display();
             //list1.removeLast();
            // list1.display();
             //list1.removeFirst();
             //list1.display();
-            list1.reverseList();
+           // list1.reverseList();
+            //list1.display();
+            list1.head = list1.recursiveReverse(list1.head);
             list1.display();
 
             /* Console.WriteLine("---------------------------------------------------------------");
