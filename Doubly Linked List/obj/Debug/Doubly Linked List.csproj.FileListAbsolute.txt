@@ -1,8 +1,0 @@
-D:\DSA\DSA Lern Practice\Doubly Linked List\bin\Debug\Doubly Linked List.exe.config
-D:\DSA\DSA Lern Practice\Doubly Linked List\bin\Debug\Doubly Linked List.exe
-D:\DSA\DSA Lern Practice\Doubly Linked List\bin\Debug\Doubly Linked List.pdb
-D:\DSA\DSA Lern Practice\Doubly Linked List\obj\Debug\Doubly Linked List.csproj.AssemblyReference.cache
-D:\DSA\DSA Lern Practice\Doubly Linked List\obj\Debug\Doubly Linked List.csproj.SuggestedBindingRedirects.cache
-D:\DSA\DSA Lern Practice\Doubly Linked List\obj\Debug\Doubly Linked List.csproj.CoreCompileInputs.cache
-D:\DSA\DSA Lern Practice\Doubly Linked List\obj\Debug\Doubly Linked List.exe
-D:\DSA\DSA Lern Practice\Doubly Linked List\obj\Debug\Doubly Linked List.pdb
