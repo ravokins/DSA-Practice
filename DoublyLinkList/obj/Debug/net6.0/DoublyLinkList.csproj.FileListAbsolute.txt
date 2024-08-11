@@ -1,0 +1,15 @@
+D:\DSA\DSA Lern Practice\DoublyLinkList\bin\Debug\net6.0\DoublyLinkList.exe
+D:\DSA\DSA Lern Practice\DoublyLinkList\bin\Debug\net6.0\DoublyLinkList.deps.json
+D:\DSA\DSA Lern Practice\DoublyLinkList\bin\Debug\net6.0\DoublyLinkList.runtimeconfig.json
+D:\DSA\DSA Lern Practice\DoublyLinkList\bin\Debug\net6.0\DoublyLinkList.dll
+D:\DSA\DSA Lern Practice\DoublyLinkList\bin\Debug\net6.0\DoublyLinkList.pdb
+D:\DSA\DSA Lern Practice\DoublyLinkList\obj\Debug\net6.0\DoublyLinkList.csproj.AssemblyReference.cache
+D:\DSA\DSA Lern Practice\DoublyLinkList\obj\Debug\net6.0\DoublyLinkList.GeneratedMSBuildEditorConfig.editorconfig
+D:\DSA\DSA Lern Practice\DoublyLinkList\obj\Debug\net6.0\DoublyLinkList.AssemblyInfoInputs.cache
+D:\DSA\DSA Lern Practice\DoublyLinkList\obj\Debug\net6.0\DoublyLinkList.AssemblyInfo.cs
+D:\DSA\DSA Lern Practice\DoublyLinkList\obj\Debug\net6.0\DoublyLinkList.csproj.CoreCompileInputs.cache
+D:\DSA\DSA Lern Practice\DoublyLinkList\obj\Debug\net6.0\DoublyLinkList.dll
+D:\DSA\DSA Lern Practice\DoublyLinkList\obj\Debug\net6.0\refint\DoublyLinkList.dll
+D:\DSA\DSA Lern Practice\DoublyLinkList\obj\Debug\net6.0\DoublyLinkList.pdb
+D:\DSA\DSA Lern Practice\DoublyLinkList\obj\Debug\net6.0\DoublyLinkList.genruntimeconfig.cache
+D:\DSA\DSA Lern Practice\DoublyLinkList\obj\Debug\net6.0\ref\DoublyLinkList.dll
