@@ -1,0 +1,15 @@
+D:\DSA\DSA Lern Practice\Stack Implementation\bin\Debug\net6.0\Stack Implementation.exe
+D:\DSA\DSA Lern Practice\Stack Implementation\bin\Debug\net6.0\Stack Implementation.deps.json
+D:\DSA\DSA Lern Practice\Stack Implementation\bin\Debug\net6.0\Stack Implementation.runtimeconfig.json
+D:\DSA\DSA Lern Practice\Stack Implementation\bin\Debug\net6.0\Stack Implementation.dll
+D:\DSA\DSA Lern Practice\Stack Implementation\bin\Debug\net6.0\Stack Implementation.pdb
+D:\DSA\DSA Lern Practice\Stack Implementation\obj\Debug\net6.0\Stack Implementation.csproj.AssemblyReference.cache
+D:\DSA\DSA Lern Practice\Stack Implementation\obj\Debug\net6.0\Stack Implementation.GeneratedMSBuildEditorConfig.editorconfig
+D:\DSA\DSA Lern Practice\Stack Implementation\obj\Debug\net6.0\Stack Implementation.AssemblyInfoInputs.cache
+D:\DSA\DSA Lern Practice\Stack Implementation\obj\Debug\net6.0\Stack Implementation.AssemblyInfo.cs
+D:\DSA\DSA Lern Practice\Stack Implementation\obj\Debug\net6.0\Stack Implementation.csproj.CoreCompileInputs.cache
+D:\DSA\DSA Lern Practice\Stack Implementation\obj\Debug\net6.0\Stack Implementation.dll
+D:\DSA\DSA Lern Practice\Stack Implementation\obj\Debug\net6.0\refint\Stack Implementation.dll
+D:\DSA\DSA Lern Practice\Stack Implementation\obj\Debug\net6.0\Stack Implementation.pdb
+D:\DSA\DSA Lern Practice\Stack Implementation\obj\Debug\net6.0\Stack Implementation.genruntimeconfig.cache
+D:\DSA\DSA Lern Practice\Stack Implementation\obj\Debug\net6.0\ref\Stack Implementation.dll
