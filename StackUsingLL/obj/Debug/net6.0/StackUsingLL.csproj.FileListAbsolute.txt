@@ -1,0 +1,15 @@
+D:\DSA\DSA Lern Practice\StackUsingLL\bin\Debug\net6.0\StackUsingLL.exe
+D:\DSA\DSA Lern Practice\StackUsingLL\bin\Debug\net6.0\StackUsingLL.deps.json
+D:\DSA\DSA Lern Practice\StackUsingLL\bin\Debug\net6.0\StackUsingLL.runtimeconfig.json
+D:\DSA\DSA Lern Practice\StackUsingLL\bin\Debug\net6.0\StackUsingLL.dll
+D:\DSA\DSA Lern Practice\StackUsingLL\bin\Debug\net6.0\StackUsingLL.pdb
+D:\DSA\DSA Lern Practice\StackUsingLL\obj\Debug\net6.0\StackUsingLL.csproj.AssemblyReference.cache
+D:\DSA\DSA Lern Practice\StackUsingLL\obj\Debug\net6.0\StackUsingLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\DSA\DSA Lern Practice\StackUsingLL\obj\Debug\net6.0\StackUsingLL.AssemblyInfoInputs.cache
+D:\DSA\DSA Lern Practice\StackUsingLL\obj\Debug\net6.0\StackUsingLL.AssemblyInfo.cs
+D:\DSA\DSA Lern Practice\StackUsingLL\obj\Debug\net6.0\StackUsingLL.csproj.CoreCompileInputs.cache
+D:\DSA\DSA Lern Practice\StackUsingLL\obj\Debug\net6.0\StackUsingLL.dll
+D:\DSA\DSA Lern Practice\StackUsingLL\obj\Debug\net6.0\refint\StackUsingLL.dll
+D:\DSA\DSA Lern Practice\StackUsingLL\obj\Debug\net6.0\StackUsingLL.pdb
+D:\DSA\DSA Lern Practice\StackUsingLL\obj\Debug\net6.0\StackUsingLL.genruntimeconfig.cache
+D:\DSA\DSA Lern Practice\StackUsingLL\obj\Debug\net6.0\ref\StackUsingLL.dll
