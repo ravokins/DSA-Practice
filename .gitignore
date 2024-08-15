@@ -1,0 +1,19 @@
+# Ignore Visual Studio temporary files, build results, and
+# common Node.js directories.
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific folders
+.vscode/
+.vs/
+
+# Auto-generated files by Visual Studio
+Generated\ Files/
+Generated\ Files/
+bin/
+obj/
