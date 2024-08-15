@@ -46,8 +46,18 @@
                 Console.WriteLine("Queue is Underflow");
                 return;
             }
+             
             Console.WriteLine(arr[front]);
-           
+            front++;
+
+            //Reset the queue
+            if (front > back)
+            {
+
+                front = 0;
+                back = -1;
+            }
+
         }
 
         public void printQueue()
@@ -86,14 +96,22 @@
         {
             static void Main(string[] args)
             {
-                Queue queue = new Queue(10);
+                Queue queue = new Queue(3);
                 queue.Enqueue(1);
                 queue.Enqueue(2);
                 queue.Enqueue(3);
-                queue.Enqueue(4);
                 queue.lastValue();
                 queue.firstValue();
                 queue.printQueue();
+
+                Console.WriteLine("___________________________________");
+                queue.Dequeue();
+                queue.firstValue();
+                queue.Dequeue();
+                queue.firstValue();
+                queue.Dequeue();
+                queue.Enqueue(1);
+                queue.firstValue();
             }
         }
     }
