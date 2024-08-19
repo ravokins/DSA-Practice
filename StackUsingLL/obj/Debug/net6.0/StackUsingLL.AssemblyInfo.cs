@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StackUsingLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b10ea82c36b8d4cc46b90e820c6838bfd88dfbf")]
 [assembly: System.Reflection.AssemblyProductAttribute("StackUsingLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StackUsingLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
