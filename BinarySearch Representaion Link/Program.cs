@@ -39,6 +39,27 @@
                 return;
            
         }
+
+        public void postOrderTraversal(Node root)
+        {
+            if (root != null) { 
+            postOrderTraversal(root.leftPointer);
+            postOrderTraversal(root.rightPointer);
+             Console.Write(root.val + " ");
+            }
+            else return;
+        }
+
+        public void inOrderTraversal(Node root)
+        {
+            if (root != null)
+            {
+                inOrderTraversal(root.leftPointer);
+                Console.Write(root.val + " ");
+                inOrderTraversal(root.rightPointer);
+            }
+            else return ;
+        }
     }
     internal class Program
     {
@@ -56,8 +77,13 @@
             tree.Root.rightPointer.leftPointer= new Node(5);
             tree.Root.rightPointer.rightPointer= new Node(6);
             tree.preOrderTraversal(tree.Root);
-           // Console.WriteLine("Binary Tree "+ tree.Root.val);
-           
+            Console.WriteLine();
+            tree.postOrderTraversal(tree.Root);
+            Console.WriteLine();
+            tree.inOrderTraversal(tree.Root);
+            Console.WriteLine();
+            // Console.WriteLine("Binary Tree "+ tree.Root.val);
+
         }
     }
 }
