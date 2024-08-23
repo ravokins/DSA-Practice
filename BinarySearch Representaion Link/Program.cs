@@ -23,6 +23,22 @@
             // Setting Root Value:
             Root = new Node(rootval);
         }
+
+        public void preOrderTraversal(Node root)
+        {
+            // Checking if the root is not null
+            if (root != null)
+            {   //Printing the value
+                Console.Write(root.val + " ");
+                //Updating letft new root
+                preOrderTraversal(root.leftPointer);
+                //Updating right new root:
+                preOrderTraversal(root.rightPointer);
+            }
+            else
+                return;
+           
+        }
     }
     internal class Program
     {
@@ -39,8 +55,8 @@
             tree.Root.leftPointer.rightPointer=new Node(4);
             tree.Root.rightPointer.leftPointer= new Node(5);
             tree.Root.rightPointer.rightPointer= new Node(6);
-
-            Console.WriteLine("Binary Tree "+ tree.Root.val);
+            tree.preOrderTraversal(tree.Root);
+           // Console.WriteLine("Binary Tree "+ tree.Root.val);
            
         }
     }
