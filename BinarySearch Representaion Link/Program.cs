@@ -60,6 +60,30 @@
             }
             else return ;
         }
+
+        // Checking if the given subtree is BST(Binary search tree) or not 
+        public Node lastVisited = null;
+        public int isBst(Node root)
+        {
+            if (root != null)
+            {
+               
+              if(isBst(root.leftPointer)==0) return 0;
+              if(lastVisited != null&&root.val<=lastVisited.val) return 0;
+              lastVisited = root;
+              if(isBst(root.rightPointer)==0) return 0;
+
+            }
+             
+            return 1;
+        }
+        public void PrintISBST()
+        {
+            lastVisited = null;
+            int result = isBst(Root);
+            if (result == 0) Console.WriteLine("Not BST");
+            else Console.WriteLine("BSt");
+        }
     }
     internal class Program
     {
@@ -70,18 +94,20 @@
 
             // Defining Root value:
             BinaryTree tree = new BinaryTree(12);
-            tree.Root.leftPointer= new Node(1);
-            tree.Root.rightPointer= new Node(2);
-            tree.Root.leftPointer.leftPointer=new Node(3);
-            tree.Root.leftPointer.rightPointer=new Node(4);
-            tree.Root.rightPointer.leftPointer= new Node(5);
-            tree.Root.rightPointer.rightPointer= new Node(6);
+            tree.Root.leftPointer= new Node(10);
+            tree.Root.leftPointer.leftPointer=new Node(4);
+            tree.Root.leftPointer.rightPointer=new Node(11);
+            tree.Root.rightPointer= new Node(14);
+            tree.Root.rightPointer.leftPointer= new Node(13);
+            tree.Root.rightPointer.rightPointer= new Node(15);
             tree.preOrderTraversal(tree.Root);
             Console.WriteLine();
             tree.postOrderTraversal(tree.Root);
             Console.WriteLine();
             tree.inOrderTraversal(tree.Root);
             Console.WriteLine();
+            tree.PrintISBST();
+            Console.ReadLine();
             // Console.WriteLine("Binary Tree "+ tree.Root.val);
 
         }
