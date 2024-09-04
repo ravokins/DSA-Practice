@@ -88,7 +88,7 @@ namespace BinarySearch_Representaion_Link
             else Console.WriteLine("BSt");
         }
 
-        // Searching in Binary tree:
+        // Searching in Binary tree using recursive:
 
         public bool Search(Node root,int target)
         {
@@ -102,6 +102,28 @@ namespace BinarySearch_Representaion_Link
             //checking if target in right side
             else return  Search(root.rightPointer, target);
 
+        }
+
+        public void SearchRecursive(Node root,int target)
+        {
+            //if(root == null) return;
+            while (root != null)
+            {
+                if ((root.val == target))
+                {
+                    Console.WriteLine("Target is found : " + root.val);
+                    return;
+                }
+                else if (root.val > target)
+                {
+                    root = root.leftPointer;
+                }
+                else
+                {
+                    root = root.rightPointer;
+                }
+            }
+            Console.WriteLine("Target not found");
         }
     }
     internal class Program
@@ -129,6 +151,7 @@ namespace BinarySearch_Representaion_Link
             bool isFound = tree.Search(tree.Root, 4);
             // Console.WriteLine("Binary Tree "+ tree.Root.val);
              Console.WriteLine(isFound);
+            tree.SearchRecursive(tree.Root, 4);
            
             Console.ReadLine();
 
