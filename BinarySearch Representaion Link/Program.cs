@@ -1,4 +1,6 @@
-﻿namespace BinarySearch_Representaion_Link
+﻿using System.ComponentModel.Design;
+
+namespace BinarySearch_Representaion_Link
 {
 
     public class Node
@@ -49,7 +51,7 @@
             }
             else return;
         }
-
+ 
         public void inOrderTraversal(Node root)
         {
             if (root != null)
@@ -63,26 +65,42 @@
 
         // Checking if the given subtree is BST(Binary search tree) or not 
         public Node lastVisited = null;
-        public int isBst(Node root)
+        public bool isBst(Node root)
         {
             if (root != null)
             {
                
-              if(isBst(root.leftPointer)==0) return 0;
-              if(lastVisited != null&&root.val<=lastVisited.val) return 0;
+              if(isBst(root.leftPointer)==null) return false;
+              if(lastVisited != null&&root.val<=lastVisited.val) return false;
               lastVisited = root;
-              if(isBst(root.rightPointer)==0) return 0;
+              if(isBst(root.rightPointer)==null) return false;
 
             }
              
-            return 1;
+            return true;
+           
         }
         public void PrintISBST()
         {
-            lastVisited = null;
-            int result = isBst(Root);
-            if (result == 0) Console.WriteLine("Not BST");
+            
+    
+            if (!isBst(Root)) Console.WriteLine("Not BST");
             else Console.WriteLine("BSt");
+        }
+
+        // Searching in Binary tree:
+
+        public bool Search(Node root,int target)
+        {
+            // checking if root is not null
+            if (root == null) return false;
+            // checking if root== target
+            if(root.val == target) return true;
+            //checking if target in left side
+            else if(Search(root.leftPointer, target)) return true;
+            //checking if target in right side
+            else return Search(root.rightPointer, target);
+
         }
     }
     internal class Program
@@ -107,8 +125,14 @@
             tree.inOrderTraversal(tree.Root);
             Console.WriteLine();
             tree.PrintISBST();
-            Console.ReadLine();
+            bool isFound = tree.Search(tree.Root, 50);
             // Console.WriteLine("Binary Tree "+ tree.Root.val);
+             Console.WriteLine(isFound);
+           
+            Console.ReadLine();
+
+           
+              
 
         }
     }
