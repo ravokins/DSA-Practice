@@ -97,9 +97,10 @@ namespace BinarySearch_Representaion_Link
             // checking if root== target
             if(root.val == target) return true;
             //checking if target in left side
-            else if(Search(root.leftPointer, target)) return true;
+            else if(root.val > target) return Search(root.leftPointer, target); 
+            
             //checking if target in right side
-            else return Search(root.rightPointer, target);
+            else return  Search(root.rightPointer, target);
 
         }
     }
@@ -125,7 +126,7 @@ namespace BinarySearch_Representaion_Link
             tree.inOrderTraversal(tree.Root);
             Console.WriteLine();
             tree.PrintISBST();
-            bool isFound = tree.Search(tree.Root, 50);
+            bool isFound = tree.Search(tree.Root, 4);
             // Console.WriteLine("Binary Tree "+ tree.Root.val);
              Console.WriteLine(isFound);
            
