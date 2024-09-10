@@ -104,7 +104,7 @@ namespace BinarySearch_Representaion_Link
 
         }
 
-        public void SearchRecursive(Node root,int target)
+        public void Searchitrative(Node root,int target)
         {
             //if(root == null) return;
             while (root != null)
@@ -124,6 +124,43 @@ namespace BinarySearch_Representaion_Link
                 }
             }
             Console.WriteLine("Target not found");
+        }
+
+        // insertion in binary tree:
+        public void Insertion(Node root,int num)
+        {
+            //checking if root is null
+            if (root == null) { root = new Node(num); return; }
+
+            // going through all the tree
+            while (root != null) {
+
+                // Checking if num is less then root.val
+                if (num < root.val)
+                {
+                    if (root.leftPointer==null)
+                    {
+                        root.leftPointer=new Node(num);
+                        return;
+                    }
+                    else root=root.leftPointer;
+                }
+                // Checking if num is greater then root.val
+                else if (num > root.val)
+                {
+                    if (root.rightPointer == null)
+                    {
+                        root.rightPointer = new Node(num);
+                        return;
+                    }
+                    else root = root.rightPointer;
+                }
+                else
+                {
+                    Console.WriteLine("Value is there in the list:"+num);
+                    return ; 
+                }
+            }
         }
     }
     internal class Program
@@ -151,8 +188,11 @@ namespace BinarySearch_Representaion_Link
             bool isFound = tree.Search(tree.Root, 4);
             // Console.WriteLine("Binary Tree "+ tree.Root.val);
              Console.WriteLine(isFound);
-            tree.SearchRecursive(tree.Root, 4);
+            tree.Searchitrative(tree.Root, 4);
+            tree.Insertion(tree.Root,5);
+            tree.inOrderTraversal(tree.Root);
            
+
             Console.ReadLine();
 
            
